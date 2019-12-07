@@ -192,17 +192,6 @@ class BoundingBox(object):
         """
         return self.height * self.width
 
-    @property
-    def label(self):
-        """Get the label of the bounding box
-
-        Returns
-        -------
-        str
-            String representing the class i.e. the Bounding Box.
-        """
-        return self.label
-
     # TODO add test for tuple of number
     def contains(self, other):
         """Estimate whether the bounding box contains a given point.
